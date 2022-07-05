@@ -11,7 +11,7 @@ namespace Common
     {
         // Command header
         public UInt16 totalSize { get; set; } // 
-        public byte version = 0x30; 
+        public byte version = 0x30;
         public byte[] tel = new byte[20];
 
         // Message header
@@ -59,8 +59,8 @@ namespace Common
 
             mac = new byte[6];
 
-            // 전원상태 
-            power = 0x00; 
+            // 전원상태
+            power = 0x00;
             //배터리 레벨
             battery = 0x38;
             // rssi 
@@ -79,7 +79,7 @@ namespace Common
 
         public int Deserialize(byte[] packet, int startIdx)
         {
-            int index = 0;
+            int index;
             index = startIdx;
             byte[] value = new byte[10];
 
