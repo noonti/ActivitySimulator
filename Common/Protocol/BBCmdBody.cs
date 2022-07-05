@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+ 
 namespace Common.Protocol
 {
     public class BBCmdBody : IDataFrame
@@ -24,7 +24,7 @@ namespace Common.Protocol
 
         public int Deserialize(byte[] packet, int startIdx)
         {
-            int index;
+            int index = 0;
             index = startIdx;
 
             byte[] value = new byte[10];
