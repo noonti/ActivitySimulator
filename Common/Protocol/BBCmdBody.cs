@@ -24,7 +24,7 @@ namespace Common.Protocol
 
         public int Deserialize(byte[] packet, int startIdx)
         {
-            int index;
+            int index = 0;
             index = startIdx;
 
             byte[] value = new byte[10];
